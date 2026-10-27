@@ -1,15 +1,44 @@
+
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Sitem</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
-    <h1>Merhaba Dünya!</h1>
-    <p>İlk web siteme hoş geldin!</p>
-
+<div id="carouselStackedIndicators" class="carousel slide">
+  <div class="carousel-inner rounded-5">
+    <div class="carousel-item active">
+      <img src="https://i.pinimg.com/736x/5f/bd/97/5fbd976e8bbfe151dde8327cd6fec9bf.jpg" class="d-block w-100" alt="Tsugikuni aka-ukasi">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/1200x/78/ea/dc/78eadc1d6cd89c2146aa56c8321ceb47.jpg" class="d-block w-100" alt="Quyosh va Oy">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/736x/e3/1e/a6/e31ea65c1d27a09da48078a8c5019e95.jpg" class="d-block w-100" alt="Yiğlama">
+    </div>
+  </div>
+  <div class="d-flex justify-content-between align-items-center">
+    <div>
+      <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide="prev">
+        <span class="carousel-icon-prev" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide="next">
+        <span class="carousel-icon-next" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  </div>
+</div>
 </body>
 </html>
